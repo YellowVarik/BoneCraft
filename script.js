@@ -7,11 +7,15 @@ function linkCurrent() {
     var pathLength = pathArray.length;
     var currentPage = pathArray[pathLength - 1];
 
-    if (currentPage == "bonecraft.tk") {
+    var fullPathArray = window.location.pathname;
+    var fullPathLength = fullPathArray.length;
+    var fullCurrentPage = fullPathArray[pathLength - 1];
+
+    if (fullCurrentPage == "bonecraft.tk") {
         document.getElementById("linkHome").style.backgroundColor = "#e99015";
     }
 
-    if (currentPage == page0) {
+    else if (currentPage == page0) {
         document.getElementById("linkHome").style.backgroundColor = "#e99015";
     }
 
@@ -63,6 +67,4 @@ function loadDiscord() {
         }
     }
 
-} 
-
-
+}
