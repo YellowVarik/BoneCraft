@@ -7,22 +7,27 @@ function linkCurrent() {
     var pathLength = pathArray.length;
     var currentPage = pathArray[pathLength - 1];
 
+    if (currentPage == "bonecraft.tk") {
+        document.getElementById("linkHome").style.backgroundColor = "#e99015";
+    }
 
     if (currentPage == page0) {
         document.getElementById("linkHome").style.backgroundColor = "#e99015";
     }
 
-    if (currentPage == page1) {
+    else if (currentPage == page1) {
         document.getElementById("linkDynmap").style.backgroundColor = "#e99015";
     }
 
-    if (currentPage == page2) {
+    else if (currentPage == page2) {
         document.getElementById("linkForum").style.backgroundColor = "#e99015";
     }
 
-    if (currentPage == page3) {
+    else if (currentPage == page3) {
         document.getElementById("linkBans").style.backgroundColor = "#e99015";
     }
+
+    loadMinecraft();
 }
 
 function loadMinecraft() {
@@ -38,15 +43,14 @@ function loadMinecraft() {
         }
     }
 
+    loadDiscord();
 }
 
 
 
-//window.onload = loadDiscord;
-window.onload = loadMinecraft;
 window.onload = linkCurrent;
 
-/*function loadDiscord() {
+function loadDiscord() {
    var request = new XMLHttpRequest();
     request.open("GET", "https://discordapp.com/api/guilds/394591865254445063/widget.json");
     request.send();
@@ -59,6 +63,6 @@ window.onload = linkCurrent;
         }
     }
 
-} */
+} 
 
 
