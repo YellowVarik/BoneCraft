@@ -1,0 +1,127 @@
+﻿body
+{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.header{
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: #262626;
+
+    user-select: none;
+}
+
+.header ul{
+    list-style: none;
+}
+
+#logo img{
+    float: left;
+}
+
+#logo a{
+    font-family: Verdana;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#logoBone {
+    color: #aeaeae;
+    margin-left: 20px;
+}
+
+#logoCraft {
+    color: #e99015;
+}
+
+#headerLinks a{
+    float: right;
+
+    margin-top: -50px;
+
+    padding: 10px;
+
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 30px;
+
+    border-top-right-radius: 7.5px;
+    border-top-left-radius: 7.5px;
+
+    transition: background-color ease 0.3s;
+}
+
+#headerLinks a:hover{
+    background-color: #e99015;
+}
+
+#linkBans{
+    margin-right: 50px;
+}
+
+.banner{
+    z-index: -1;
+    position: fixed;
+
+    user-select: none;
+}
+
+.banner img{
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    z-index: 1;
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+
+    font-family: Helvetica;
+    font-size: 20px;
+    color: #aeaeae;
+
+    background-color: #262626;
+}
+
+footer .icon{
+    height: 40px;
+}
+
+footer #discordIcon{
+    float: left;
+}
+
+footer #discordOnline{
+    position: absolute;
+    left: 50px;
+    bottom: -15px;
+}
+
+footer .credits{
+    position: absolute;
+    left: 45%;
+    bottom: -15px;
+}
+
+footer #minecraftIcon{
+    float: right;
+}
+
+footer #minecraftOnline{
+    position: absolute;
+    right: 50px;
+    bottom: -15px;
+}
+
+#bans{
+    width: 99.99vw;
+    height: 85vh;
+}
