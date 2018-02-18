@@ -9,27 +9,28 @@ function linkCurrent() {
 
     var fullPage = window.location.href;
 
-    if (fullPage == "bonecraft.tk") {
+    if (fullPage === "bonecraft.tk") {
         document.getElementById("linkHome").style.backgroundColor = "#e99015";
     }
 
-    else if (currentPage == page0) {
+    else if (currentPage === page0) {
         document.getElementById("linkHome").style.backgroundColor = "#e99015";
     }
 
-    else if (currentPage == page1) {
+    else if (currentPage === page1) {
         document.getElementById("linkDynmap").style.backgroundColor = "#e99015";
     }
 
-    else if (currentPage == page2) {
+    else if (currentPage === page2) {
         document.getElementById("linkForum").style.backgroundColor = "#e99015";
     }
 
-    else if (currentPage == page3) {
+    else if (currentPage === page3) {
         document.getElementById("linkBans").style.backgroundColor = "#e99015";
     }
 
     loadMinecraft();
+
 }
 
 function loadMinecraft() {
@@ -38,13 +39,14 @@ function loadMinecraft() {
     request.send();
     request.onreadystatechange = function () {
 
-        if (request.readyState == XMLHttpRequest.DONE) {
+        if (request.readyState === XMLHttpRequest.DONE) {
             var response = JSON.parse(request.responseText);
             var online = response.players.online;
             document.getElementById("minecraftOnline").innerHTML = "Online: " + online;
         }
     }
 
+    setInterval(loadMinecraft, 5000);
     loadDiscord();
 }
 
@@ -58,11 +60,13 @@ function loadDiscord() {
     request.send();
     request.onreadystatechange = function () {
 
-        if (request.readyState == XMLHttpRequest.DONE) {
+        if (request.readyState === XMLHttpRequest.DONE) {
             var response = JSON.parse(request.responseText);
             var online = response.members.length;
             document.getElementById("discordOnline").innerHTML = "Online: " + online;
         }
     }
+
+    setInterval(loadDiscord, 5000);
 
 }
