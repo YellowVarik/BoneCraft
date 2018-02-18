@@ -44,9 +44,7 @@ function loadMinecraft() {
             var online = response.players.online;
             document.getElementById("minecraftOnline").innerHTML = "Online: " + online;
         }
-    }
-
-    setInterval(loadMinecraft, 5000);
+    };
     loadDiscord();
 }
 
@@ -65,8 +63,6 @@ function loadDiscord() {
             var online = response.members.length;
             document.getElementById("discordOnline").innerHTML = "Online: " + online;
         }
-    }
-
-    setInterval(loadDiscord, 5000);
+    };
 
 }
