@@ -10,8 +10,6 @@
     float: left;
     width: 100%;
     background-color: #262626;
-
-    user-select: none;
 }
 
 .header ul{
@@ -60,6 +58,35 @@
     background-color: #e99015;
 }
 
+#minecraftIp {
+    text-align: center;
+    position: absolute;
+    right: 50%;
+    top: 6px;
+    color: white;
+    font-family: Helvetica;
+    font-size: 25px;
+}
+
+#buttonCopy {
+    cursor: pointer;
+    position: absolute;
+    top: 3.1%;
+    left: 50.2%;
+    padding: 10px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 12px;
+    border-radius: 15px;
+    transition: background-color ease 0.3s;
+}
+
+#buttonCopy:hover{
+    background-color: #e99015;
+}
+
 #linkBans{
     margin-right: 50px;
 }
@@ -93,6 +120,7 @@ footer {
 
 footer .icon{
     height: 40px;
+    cursor: pointer;
 }
 
 footer #discordIcon{

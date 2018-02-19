@@ -1,3 +1,9 @@
+function copy(){
+    window.prompt("Copy het IP: Ctrl+C, Enter", document.getElementById("minecraftIp").innerHTML);
+}
+
+
+
 function linkCurrent() {
     var page0 = document.getElementById("linkHome").getAttribute("href");
     var page1 = document.getElementById("linkDynmap").getAttribute("href");
@@ -6,8 +12,6 @@ function linkCurrent() {
     var pathArray = window.location.pathname.split('/');
     var pathLength = pathArray.length;
     var currentPage = pathArray[pathLength - 1];
-
-    console.log(currentPage);
 
     if (currentPage === "") {
         document.getElementById("linkHome").style.backgroundColor = "#e99015";
@@ -30,6 +34,7 @@ function linkCurrent() {
     }
 
     loadMinecraft();
+    new Clipboard('.btn');
 
 }
 
