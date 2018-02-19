@@ -7,13 +7,9 @@ function linkCurrent() {
     var pathLength = pathArray.length;
     var currentPage = pathArray[pathLength - 1];
 
-    var fullPage = window.location.href;
+    console.log(currentPage);
 
-    if (fullPage === "bonecraft.tk") {
-        document.getElementById("linkHome").style.backgroundColor = "#e99015";
-    }
-
-    else if (currentPage === page0) {
+    if (currentPage === page0) {
         document.getElementById("linkHome").style.backgroundColor = "#e99015";
     }
 
