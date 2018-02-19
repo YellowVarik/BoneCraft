@@ -9,7 +9,11 @@ function linkCurrent() {
 
     console.log(currentPage);
 
-    if (currentPage === page0) {
+    if (currentPage === "") {
+        document.getElementById("linkHome").style.backgroundColor = "#e99015";
+    }
+
+    else if (currentPage === page0) {
         document.getElementById("linkHome").style.backgroundColor = "#e99015";
     }
 
