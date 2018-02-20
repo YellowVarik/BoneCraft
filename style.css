@@ -23,12 +23,12 @@
 #logo a{
     font-family: Verdana;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 150%;
 }
 
 #logoBone {
     color: #aeaeae;
-    margin-left: 20px;
+    margin-left: 1%;
 }
 
 #logoCraft {
@@ -38,9 +38,9 @@
 #headerLinks a{
     float: right;
 
-    margin-top: -50px;
+    margin-top: -2.5%;
 
-    padding: 10px;
+    padding: 0.5%;
 
     color: white;
     display: block;
@@ -152,4 +152,9 @@ footer #minecraftOnline{
 #bans{
     width: 99.99vw;
     height: 90vh;
+}
+
+#dynmap{
+    width: 100%;
+    height: 87.5vh;
 }
