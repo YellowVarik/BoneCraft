@@ -65,7 +65,7 @@ function loadDiscord() {
 
         if (request.readyState === XMLHttpRequest.DONE) {
             var response = JSON.parse(request.responseText);
-            var online = response.members.length;
+            var online = response.members.length - 1;
             document.getElementById("discordOnline").innerHTML = "Online: " + online;
         }
     };
