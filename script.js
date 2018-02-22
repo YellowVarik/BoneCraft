@@ -34,7 +34,6 @@ function linkCurrent() {
     }
 
     loadMinecraft();
-    new Clipboard('.btn');
 
 }
 
