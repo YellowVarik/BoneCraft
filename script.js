@@ -6,7 +6,7 @@ function copy(){
 
 function linkCurrent() {
     var page0 = document.getElementById("linkHome").getAttribute("href");
-    var page1 = document.getElementById("linkDynmap").getAttribute("href");
+    //var page1 = document.getElementById("linkDynmap").getAttribute("href");
     var page2 = document.getElementById("linkForum").getAttribute("href");
     var page3 = document.getElementById("linkBans").getAttribute("href");
     var pathArray = window.location.pathname.split('/');
