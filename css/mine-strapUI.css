@@ -207,6 +207,10 @@
   background-color: #262626;
 }
 
+.popup-button.forums {
+  background-color: #e99015;
+}
+
 .popup-button.forums:hover {
   background-color: #262626;
 }
