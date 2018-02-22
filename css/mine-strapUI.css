@@ -154,7 +154,7 @@
 .about-heading {
   margin-top: 7px;
   font-family: Raleway, sans-serif;
-  color: #e99015;
+  color: #262626;
   font-size: 39px;
   font-weight: 300;
   text-align: center;
@@ -162,7 +162,7 @@
 
 .about-para {
   font-family: Raleway, sans-serif;
-  color: #e99015;
+  color: #262626;
   text-align: center;
 }
 
@@ -192,23 +192,23 @@
 }
 
 .popup-button.youtube {
-  background-color: #ed395d;
+  background-color: #e99015;
 }
 
 .popup-button.youtube:hover {
-  background-color: #e99015;
+  background-color: #262626;
 }
 
 .popup-button.facebook {
-  background-color: #3973ed;
+  background-color: #e99015;
 }
 
 .popup-button.facebook:hover {
-  background-color: #e99015;
+  background-color: #262626;
 }
 
 .popup-button.forums:hover {
-  background-color: #e99015;
+  background-color: #262626;
 }
 
 .staff-section {
