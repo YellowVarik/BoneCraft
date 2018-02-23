@@ -334,20 +334,15 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  height: 63px;
+  height: 35px;
   background-color: #262626;
 }
 
 .copyright-text {
-  width: 800px;
-  height: 45px;
   text-align: center;
-  margin-left: 2px;
   font-family: 'PT Sans', sans-serif;
   color: #ffffff;
   font-size: 16px;
-  line-height: 61px;
-  font-weight: 400;
 }
 
 .link-features {
